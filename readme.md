@@ -6,5 +6,5 @@
 - [Supplementary file 5. Compare similarity measurements](https://simplifyenrichment.github.io/supplementary/suppl5_compare_similarity/suppl5_compare_similarity.html)
 - [Supplementary file 6. Test partitioning methods](https://simplifyenrichment.github.io/supplementary/suppl6_partitioning_methods/suppl6_partitioning_methods.html)
 - [Supplementary file 7. Select cutoff in binary cut clustering](https://simplifyenrichment.github.io/supplementary/suppl7_select_cutoff/suppl7_select_cutoff.html)
-
+- [Supplementary file 8. Concordance score between two clusterings]((https://simplifyenrichment.github.io/supplementary/suppl7_select_cutoff/suppl8_concordance.html)
 
