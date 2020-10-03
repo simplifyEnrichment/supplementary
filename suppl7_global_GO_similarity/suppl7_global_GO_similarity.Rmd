@@ -1,5 +1,5 @@
 ---
-title: "Supplementary file 6. Global GO term similarity"
+title: "Supplementary file 7. Global GO term similarity"
 author: "Zuguang Gu (z.gu@dkfz.de)"
 date: '`r Sys.Date()`'
 ---
