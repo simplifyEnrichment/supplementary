@@ -51,7 +51,6 @@ go_id = random_GO(500)
 pl = list()
 for(measure in c("Rel", "Resnik", "Lin", "Jiang", "Wang")) {
 	mat = GO_similarity(go_id, measure = measure)
-	print(range(mat))
 	col_fun = colorRamp2(range(mat), c("white", "red"))
 	pl[[measure]] = grid.grabExpr(draw(Heatmap(mat, col = col_fun, show_row_names = FALSE, 
 		name = qq("@{measure} similarity"), show_column_names = FALSE,
