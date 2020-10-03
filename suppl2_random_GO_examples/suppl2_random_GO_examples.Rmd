@@ -27,7 +27,7 @@ options(width = 100)
 
 In this supplementary file, we demonstrate the heatmaps of semantic similarities for randomly sampled 500 GO terms,
 from Biological Process (BP), Molecular Function (MF) and Cellular Component (CC) ontologies.
-For each ontology category, we show 10 examples.
+For each ontology category, we show 11 examples.
 
 
 ```{r}

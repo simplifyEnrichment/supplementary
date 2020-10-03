@@ -1,5 +1,5 @@
 ---
-title: "Supplementary file 1. Definition of Coefficients that Measure Gene Overlaps"
+title: "Supplementary file 1. Definition of coefficients that measure gene overlaps"
 author: "Zuguang Gu (z.gu@dkfz.de)"
 date: '`r Sys.Date()`'
 ---
@@ -16,6 +16,10 @@ $${|A \cap B|}\over{|A \cup B|}$$
 The Dice coeffcient is calculated as:
 
 $$\frac{|A \cap B|}{(|A| + |B|)/2}$$
+
+Jaccard coefficient has a relationship with Dice coefficient in the form of:
+
+$$Jaccard = \frac{Dice}{2 - Dice}$$
 
 The overlap coeffcient is calculated as:
 
@@ -62,7 +66,7 @@ $$p_{No} = \frac{c+d}{a+b+c+d} \cdot \frac{b+d}{a+b+c+d}$$
 
 $$p_e = p_{Yes} + p_{No}$$
 
-where $p_o$ is the probability of a gene in both gene sets or both not in the two sets,
+where $p_o$ is the probability of a gene in both gene sets or neither in the two sets,
 $p_{Yes}$ is the probability of a gene in both gene sets by random (by assuming the events of a gene in set $A$ and set $B$ are independent), $p_{No}$ is the probability of a gene
 not in the two sets by random, and $p_e$ is the probability of a gene either both in 
 the two sets or not in the two sets by random.
