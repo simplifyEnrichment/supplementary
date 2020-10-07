@@ -8,4 +8,4 @@
 - [Supplementary file 7. Global GO term similarity](https://simplifyenrichment.github.io/supplementary/suppl7_global_GO_similarity/suppl7_global_GO_similarity.html)
 - [Supplementary file 8. Compare partitioning methods in binary cut clustering](https://simplifyenrichment.github.io/supplementary/suppl8_partitioning_methods/suppl8_partitioning_methods.html)
 - [Supplementary file 9. Select cutoff in binary cut clustering](https://simplifyenrichment.github.io/supplementary/suppl9_select_cutoff/suppl9_select_cutoff.html)
-
+- [Supplementary file 10. Concordance score between two clusterings](https://simplifyenrichment.github.io/supplementary/suppl10_concordance/suppl10_concordance.html)
