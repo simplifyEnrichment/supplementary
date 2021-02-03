@@ -49,6 +49,8 @@ The number of all GO terms in BP ontology:
 dim(sm)
 ```
 
+## GO BP terms can be clustered into several major groups
+
 To simplify the similarity matrix, the GO terms which locate as leaves in the GO tree are removed.
 These leaf terms only have similarity with themselves, thus they have zero similarity to all other terms.
 
@@ -124,6 +126,8 @@ set.seed(123)
 ind = sample(length(cl), 2000)
 ht_clusters(sm2[ind, ind], cl = cl[ind], exclude_words = c("process", "regulation", "response"))
 ```
+
+## GO clusters are dominated by several top GO terms
 
 Next we look at what are the top GO terms in each cluster (_i.e._, the GO terms located
 on the top of the GO subtree in each cluster). First we construct subgraph for each cluster.
