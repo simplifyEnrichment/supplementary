@@ -385,7 +385,6 @@ sm = GO_similarity(names(ic), measure = &quot;Rel&quot;, ont = &quot;BP&quot;)</
 <p>To simplify the similarity matrix, the GO terms which locate as leaves in the GO tree are removed. These leaf terms only have similarity with themselves, thus they have zero similarity to all other terms.</p>
 <pre class="r"><code>l = rowSums(sm &gt; 0) == 1
 sm = sm[!l, !l]</code></pre>
-<h3> GO clusters are dominated by several top GO terms</h3>h3>
 <p>Next we construct the GO tree. The parent-children information is from <em>GO.db</em> package. The <code>GOBPCHILDREN</code> data object contains lists of direct children terms for every GO terms. If a GO term is a leaf in the GO tree, the value for it is <code>NA</code>.</p>
 <pre class="r"><code>library(GO.db)
 lt = as.list(GOBPCHILDREN)
@@ -430,6 +429,7 @@ g</code></pre>
 ## [25] GO:0000018-&gt;GO:1903110 GO:0000019-&gt;GO:0032207 GO:0000019-&gt;GO:0045950 GO:0000019-&gt;GO:0045951
 ## [29] GO:0000019-&gt;GO:1903221 GO:0000022-&gt;GO:0032888 GO:0000022-&gt;GO:0051256 GO:0000022-&gt;GO:0061804
 ## + ... omitted several edges</code></pre>
+<h3> GO clusters are dominated by several top GO terms</h3>
 <p>We take the common GO terms in the GO tree and the global similarity matrix.</p>
 <pre class="r"><code>cn = intersect(rownames(sm), unlist(df2))
 sm2 = sm[cn, cn]
